@@ -1,5 +1,6 @@
 package br.com.gds.apputils
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.gds.apputils.databinding.ActivityMainBinding
@@ -12,9 +13,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
+
+
     }
 
     private fun initViews() = with(binding) {
         text.text = Bateria._VidaBateria
+
     }
 }
